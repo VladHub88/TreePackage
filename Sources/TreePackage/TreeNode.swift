@@ -11,3 +11,11 @@ public class TreeNode<T> {
         children.append(child)
     }
 }
+
+extension TreeNode {
+  public func forEachDepthFirst(visit: (TreeNode) -> Void) {
+    visit(self)
+    children.forEach {
+      $0.forEachDepthFirst(visit: visit)
+    }
+} }
