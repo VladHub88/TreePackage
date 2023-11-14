@@ -22,7 +22,6 @@ extension TreeNode {
     }
 }
 
-
 extension TreeNode {
     public func forEachLevelOrder(visit: (TreeNode) -> Void) {
         visit(self)
