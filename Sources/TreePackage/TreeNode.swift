@@ -1,5 +1,4 @@
 import Foundation
-import QueuePackage
 
 public class TreeNode<T> {
     public var value: T
@@ -37,3 +36,4 @@ extension TreeNode {
         }
     }
 }
+
